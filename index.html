@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Luffarschack</title>
-    <link rel="stylesheet" type="text/css" href="luffarschack.html">
+     <title>Luffarschack</title>
+    <link rel="stylesheet" type="text/css" href="Luffarschack.css">
     <style>
     </style>
 </head>
 <body>
-    <h1>Testing
-    </h1>
+    <div id="header">
+        <h1 class="header-text">Luffarschack</h1>
+        <p class="header-text">Fem i rad, välj en ruta att placera X eller O i, X börjar.</p>
+        <p class="header-text">Välj ett bräde nedan du vill spela</p>
+    </div>
+    <button id="board15" onclick="getBoard('15', '15')" class="button-text">Board 15</button>
+    <button id="board25" onclick="getBoard('25', '25')" class="button-text">Board 25</button>
+    <button id="board40" onclick="getBoard('40', '40')" class="button-text">Board 40</button>
+    
+
+    <div id="player" class="header-text"></div>
+    <div id="count" class="header-text"></div>
+    <div class="boards">
+        <table id="board">
+            <!-- Propogated by JS -->
+        </table>
+    </div>
+ 
+        
+    <script type="application/javascript" src="Luffarschack.js"></script>
 </body>
 </html>
